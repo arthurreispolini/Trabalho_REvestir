@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Sekuya&display=swap');
+body{
+    margin: 0px;
+    background-color: #E0E0E0;
+}
+h1{
+    margin: 0px;
+}
+.header{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr;
+   background-color:#848484;
+   justify-items: end;
+   align-items: center;
+   height: 80px;
+   background: linear-gradient(to bottom,#565656,#848484,#B3B3B3);
+}
+.title{
+   font-size: 40px;
+   font-family: "REvestir", serif;
+   padding-right: 100px;
+}
+.navbar{
+    display: flex;
+    padding-left: 400px;
+    background-color: #B3B3B3
+}
+.lupa{
+    padding: 6px;
+}
+.buscar{
+    width: 500px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: #E0E0E0;
+}
