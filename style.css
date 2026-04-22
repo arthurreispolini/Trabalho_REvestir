@@ -35,3 +35,18 @@ h1{
     border-radius: 20px;
     background-color: #E0E0E0;
 }
+.imageminicial{
+    display: grid;
+    grid-area: 1 / 2;
+    background-image: url(ChatGPT\ Image\ Apr\ 22\,\ 2026\,\ 02_46_05\ PM.png);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.h1daprimeiraimagem{
+ position: absolute;
+ padding-left: 50px;
+ padding-top: 100px;
+ font-size: 60px;
+ z-index: 2;
+ color:#2B2B2B ;
+}
