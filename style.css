@@ -37,16 +37,49 @@ h1{
 }
 .imageminicial{
     display: grid;
-    grid-area: 1 / 2;
-    background-image: url(ChatGPT\ Image\ Apr\ 22\,\ 2026\,\ 02_46_05\ PM.png);
-    background-repeat: no-repeat;
+}
+.imageminicial img{
     width: 100%;
+    height: auto;
+    display: block;
 }
 .h1daprimeiraimagem{
  position: absolute;
  padding-left: 50px;
  padding-top: 100px;
  font-size: 60px;
- z-index: 2;
  color:#2B2B2B ;
+}
+.card{
+  display: grid;
+  grid-template-rows: 60% 40%;
+  height: 500px;
+  width: 380px;
+  border: 1px solid black;
+  border-radius: 30px;
+  border-style: hidden;
+  box-shadow: 3px 3px 30px gray;
+  overflow: hidden;
+  transition: transform 3 ease;
+}
+.card :hover{
+     transform:  scale(1.05);
+}
+.textodosprodutos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E0E0E0;
+    padding: 20px;
+    font-size: 30px;
+}
+.preco{
+ padding-bottom: 40px;
+ padding-right: 150px;
+}
+.areacamisas{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
 }
