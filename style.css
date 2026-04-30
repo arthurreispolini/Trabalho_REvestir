@@ -60,10 +60,12 @@ h1{
   border-style: hidden;
   box-shadow: 3px 3px 30px gray;
   overflow: hidden;
-  transition: transform 3 ease;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
 }
-.card :hover{
+.card:hover{
      transform:  scale(1.05);
+     
 }
 .textodosprodutos{
     display: flex;
@@ -79,7 +81,11 @@ h1{
  padding-right: 150px;
 }
 .areacamisas{
-    display:grid;
+    display:flex;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 30px;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    
 }
