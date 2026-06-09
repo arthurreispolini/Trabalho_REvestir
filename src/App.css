@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&family=Sekuya&display=swap');
+body{
+    margin: 0;
+}
+.header{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background: linear-gradient(to bottom,#565656,#848484,#B3B3B3);
+    position: relative;
+}
+.title{
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  padding-right: 1rem;
+}
+.barrapesquisa{
+    border-radius: 30px;
+    width: 15rem;
+    height: 1.5rem;
+    border: 1px solid rgba(194, 188, 188, 0.253);
+    position: absolute;
+    left: 14rem;
+    top: 2rem;
+}
+.barrapesquisa:focus {
+    outline: none;       
+    
+}
+.iconescadastrocart{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 1rem;
+}
+.iconecadastro{
+    font-size: 2rem;
+    padding-right:1rem ;
+}
+.carrinho{ 
+    font-size: 2rem;
+}
+
+.sidebardiv{
+    border:none;
+    box-shadow: 2px 2px 2px;
+    width: 40rem;
+    height: 30rem;
+    border-radius: 10px;
+    border-style: hidden;
+    box-shadow: 3px 3px 30px rgb(65, 64, 64);
+    background-color: #B3B3B3;
+}
+@media (max-width: 768px){
+.title{
+    font-size: 2rem;
+}
+.barrapesquisa{
+    width: 12rem;
+    left: 9.5rem;
+    top: 1.7rem;
+}
+.iconecadastro{
+    font-size: 2rem;
+}
+.carrinho{
+    font-size: 2rem;
+}
+}
+@media (max-width: 430px){
+    .title{
+        font-size: 1.3rem;
+    }
+    .iconecadastro{
+    font-size: 1rem;
+}
+.carrinho{
+    font-size: 1rem;
+}
+}
