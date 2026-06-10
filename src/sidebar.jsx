@@ -1,6 +1,6 @@
 import { useState} from 'react'
 import "./App.css";
-import { FaBars } from "react-icons/fa";
+import cardapio1 from './assets/cardapio (1).png'
 
 function Sidebarfunction() {
     const[ativo,setAtivo] = useState(false)
@@ -10,7 +10,7 @@ function Sidebarfunction() {
 
 return(
    <>
-    <FaBars onClick={botaosidebar}/>
+    <img src={cardapio1} onClick={botaosidebar} className='iconesidebar'/>
     {ativo && (
      <div onClick={botaosidebar} className='sidebardiv'>
       <p>produtos</p>

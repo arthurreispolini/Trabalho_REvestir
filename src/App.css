@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&family=Sekuya&display=swap');
 body{
     margin: 0;
+    background-color: #fff;
 }
 .header{
     display:flex;
@@ -8,14 +9,15 @@ body{
     align-items: center;
     width: 100%;
     height: 5rem;
-    background: linear-gradient(to bottom,#565656,#848484,#B3B3B3);
+    background-color: #606f7d;
     position: relative;
 }
 .title{
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 200;
   padding-right: 1rem;
+  color: #d3e2ef;
 }
 .barrapesquisa{
     border-radius: 30px;
@@ -35,15 +37,20 @@ body{
     justify-content: flex-end;
     width: 100%;
     padding-right: 1rem;
+    color: #d3e2ef;
 }
 .iconecadastro{
     font-size: 2rem;
     padding-right:1rem ;
 }
 .carrinho{ 
-    font-size: 2rem;
+    font-size: 2rem; 
 }
-
+.navbar{
+    background-color: #d3e9ef;
+    width: 100%;
+    height: 2rem;
+}
 .sidebardiv{
     border:none;
     box-shadow: 2px 2px 2px;
@@ -52,7 +59,10 @@ body{
     border-radius: 10px;
     border-style: hidden;
     box-shadow: 3px 3px 30px rgb(65, 64, 64);
-    background-color: #B3B3B3;
+    background-color: #fff;
+}
+.iconesidebar{
+   width: 2rem;
 }
 @media (max-width: 768px){
 .title{
@@ -74,10 +84,15 @@ body{
     .title{
         font-size: 1.3rem;
     }
+    .barrapesquisa{
+        width: 12rem;
+        left: 6rem;
+        top: 1.7rem;
+    }
     .iconecadastro{
     font-size: 1rem;
-}
+    }
 .carrinho{
     font-size: 1rem;
-}
+    }
 }
