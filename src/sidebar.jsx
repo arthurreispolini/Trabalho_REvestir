@@ -16,6 +16,7 @@ return(
       <p>produtos</p>
       <p>roupas</p>
       <p>ONG</p>
+      <p>Apagável</p>
      </div>
     )}
    <div/>
