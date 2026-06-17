@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&family=Sekuya&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0;
     background-color: #fff;
@@ -50,16 +54,20 @@ body{
     background-color: #d3e9ef;
     width: 100%;
     height: 2rem;
+    padding-bottom: 0;
+    position: relative;
+    z-index: 2;
+    border-bottom: 1px solid transparent;
 }
 .sidebardiv{
-    border:none;
-    box-shadow: 2px 2px 2px;
-    width: 40rem;
+    width: 20rem;
     height: 30rem;
-    border-radius: 10px;
-    border-style: hidden;
-    box-shadow: 3px 3px 30px rgb(65, 64, 64);
-    background-color: #fff;
+    border: 1px solid black;
+    background-color: #fff;         
+    padding-top: 0;
+    position: absolute;
+    top: calc(2rem + 1px);
+    z-index: 1;
 }
 .iconesidebar{
    width: 2rem;
@@ -95,4 +103,15 @@ body{
 .carrinho{
     font-size: 1rem;
     }
+}
+.divimageminicial{
+    position: relative;
+}
+.fotoinicial{
+    width: 100%;
+    position: relative;
+}
+.h1daprimeiraimagem{
+    position: absolute;
+    left: 10rem;
 }
