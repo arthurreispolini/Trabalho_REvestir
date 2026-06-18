@@ -72,6 +72,65 @@ body{
 .iconesidebar{
    width: 2rem;
 }
+.pagecontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.divimageminicial{
+    display: grid;
+    position: relative;
+}
+.fotoinicial{
+    width: 100%;
+}
+.h1daprimeiraimagem{
+    color: #d3e2ef;
+    font-size: 6vh 6vw;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    /* position: absolute; */
+}
+.areacamisas{
+    display:flex;
+    border-radius: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+.card{
+  display: grid;
+  grid-template-rows: 60% 40%;
+  height: 25rem;
+  width: 20rem;
+  border: 1px solid black;
+  border-radius: 30px;
+  border-style: hidden;
+  box-shadow: 3px 3px 30px gray;
+  overflow: hidden;
+  transition: transform 1s ease;
+  flex-shrink: 0;
+}
+.card:hover{
+     transform:  scale(1.05);
+}
+.textodosprodutos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E0E0E0;
+    padding: 20px;
+    font-size: 30px;
+}
+.preco{
+ padding-bottom: 40px;
+ padding-right: 150px;
+}
+
 @media (max-width: 768px){
 .title{
     font-size: 2rem;
@@ -103,15 +162,4 @@ body{
 .carrinho{
     font-size: 1rem;
     }
-}
-.divimageminicial{
-    position: relative;
-}
-.fotoinicial{
-    width: 100%;
-    position: relative;
-}
-.h1daprimeiraimagem{
-    position: absolute;
-    left: 10rem;
 }
