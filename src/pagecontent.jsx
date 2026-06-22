@@ -1,6 +1,9 @@
 import "./App.css";
 import modeloinicial from './assets/fotoinicial.png'
-import camisa1 from './assets/camisa1.png'
+import masculino from './assets/categoria-masculino.png'
+import feminino from './assets/categoria-feminina.png'
+import acessorios from './assets/acessorios.png'
+import calcados from './assets/calcados.png'
 
 function PageContent(){
 
@@ -8,23 +11,23 @@ function PageContent(){
     <div className="pagecontent">
 
     <div className="divimageminicial">
-        <img src={modeloinicial} alt="foto" className="fotoinicial"/>
-        </div>
-<hr />
-        <div className="areacamisas">
+        <h1>Somos a Única <br /> com estilo para você.</h1>
+        <p>Roupas que combinam com sua essência.</p>
+    </div>
+<div className="categorias">
+    <div className="linha"></div>
+<p>Categorias</p>
+<div className="linha"></div>
+</div>
+<div className="cards-categoria">
 
-            <div className="card">
-                <div>
-                <img src ={camisa1} height={300} width={380}/>
-                  </div>
-                <div className="textodosprodutos">
-                <p>Camisa marrom sem estampa</p>
-                <p className="preco">Preço: R$99,99</p>
-                </div>
-            </div>
-            
-        </div>
-        
+<div className="card1"></div>
+<div className="card2"></div>
+<div className="card3"></div>
+<div className="card4"></div>
+
+</div>
+       
     </div>
             
  )

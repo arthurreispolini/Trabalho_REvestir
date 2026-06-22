@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&family=Sekuya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Imperial+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&family=Sekuya&display=swap');
 *{
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
 }
 body{
     margin: 0;
@@ -69,35 +71,89 @@ body{
 .carrinho{ 
     font-size: 2rem; 
 }
-.navbar{
-    background-color: #d3e9ef;
+.divimageminicial{
+    background-image: url("./assets/fotoinicial.png");
+    background-size: cover;
     width: 100%;
-    height: 2rem;
-    padding-bottom: 0;
-    position: relative;
-    z-index: 2;
-    border-bottom: 1px solid transparent;
-}
-.sidebardiv{
-    width: 20rem;
-    height: 30rem;
-    border: 1px solid black;
-    background-color: #fff;         
-    padding-top: 0;
-    position: absolute;
-    top: calc(2rem + 1px);
-    z-index: 1;
-}
-.iconesidebar{
-   width: 2rem;
+    height: clamp(150px, 45vw, 500px);
 }
 .divimageminicial{
-    height: 10rem;
+color: #fff;
+position: relative;
+
 }
-.fotoinicial{
+.divimageminicial h1{
+    font-family: "Prata", serif;
+    font-weight: normal;
+    font-size: clamp(16px, 4vw, 3rem);
+}
+.divimageminicial p{
+font-size: clamp(8px, 2vw, 1.5rem);
+}
+.divimageminicial h1{
+position: relative;
+left: 15%;
+top: 15%;
+}
+.divimageminicial p{
+position: relative;
+left: 15%;
+top: 15%;
+}
+.categorias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
     width: 100%;
+    height: 7vh;
+    font-weight: 300;
+    font-size: clamp(8px, 4vw, 2rem);
+    letter-spacing: 0.15rem;
 }
-.areacamisas{
+.linha{
+    width: 10%;
+    height: 1px;
+    background-color: black;
+}
+.categorias p{
+    margin: 0;
+}
+.cards-categoria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4vw;
+    height: clamp(100px,10vw, 350px);
+}
+.cards-categoria :hover{
+    transform: scale(1.05);
+}
+
+.card1 ,.card2, .card3 ,.card4{
+    transition: transform 1s ease;
+    height: 12vh;
+    width: 17vw;
+    border: 1px solid rgba(0, 0, 0, 0.349);
+    border-radius: 20px;
+    background-size: 130%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card1{
+    background-image: url(./assets/categoria-masculino.png);
+}
+.card2{
+    background-image: url(./assets/categoria-feminina.png);
+}
+.card3{
+    background-image: url(./assets/calcados.png);
+}
+.card4{
+    background-image: url(./assets/acessorios.png);
+}
+
+/* .areacamisas{
     display:flex;
     border-radius: 30px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -168,4 +224,4 @@ body{
 .carrinho{
     font-size: 1rem;
     }
-}
+} */
