@@ -1,5 +1,5 @@
 import "./App.css";
-import modeloinicial from './assets/modeloinicial.png'
+import modeloinicial from './assets/fotoinicial.png'
 import camisa1 from './assets/camisa1.png'
 
 function PageContent(){
@@ -9,11 +9,8 @@ function PageContent(){
 
     <div className="divimageminicial">
         <img src={modeloinicial} alt="foto" className="fotoinicial"/>
-        <h1 className="h1daprimeiraimagem">Somos a Única com <br />uma  ONG própria</h1> 
         </div>
-<br />
-<br />
-
+<hr />
         <div className="areacamisas">
 
             <div className="card">
@@ -27,7 +24,7 @@ function PageContent(){
             </div>
             
         </div>
-
+        
     </div>
             
  )
