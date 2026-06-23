@@ -50,10 +50,13 @@ body{
   padding-right: 4rem;
   color: #fff;
 }
-.lupa{
+ .lupa{
     font-size: 2rem;
 }
-.barrapesquisa{
+.fundologin{
+    background-image: url("./assets/foto-revestir.png");
+}
+/* .barrapesquisa{
     border-radius: 30px;
     width: 15rem;
     height: 1.5rem;
@@ -64,12 +67,16 @@ body{
 }
 .barrapesquisa:focus {
     outline: none;       
-}
+}  */
 .iconecadastro{
     font-size: 2rem;
+    color: white;
 }
 .carrinho{ 
     font-size: 2rem; 
+}
+.fundologin{
+    background-image: url(./assets/foto-revestir.png);
 }
 .divimageminicial{
     background-image: url("./assets/fotoinicial.png");

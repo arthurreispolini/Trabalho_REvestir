@@ -3,6 +3,7 @@ import "./App.css";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 
 function Header() {
@@ -14,16 +15,18 @@ function Header() {
       <h1 className="title">REvestir</h1>
       </div>
       <div className="divpheader">
-      <p>início</p>
+      <p>Início</p>
       <p>Coleções</p>
-      <p>masculino</p>
+      <p>Masculino</p>
       <p>Feminino</p>
       <p>Acessórios</p>
       </div>
       <div className="iconescadastrocart">
       {/* <input type="text" className="barrapesquisa" placeholder="Pesquise aqui"/> */}
 <FiSearch className="lupa"/>
+<Link to="/login">
 <FaUser  className="iconecadastro"/>
+</Link>
 <FaShoppingCart  className="carrinho"/>
       </div>
     </div>
