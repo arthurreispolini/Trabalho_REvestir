@@ -11,7 +11,7 @@ function Header() {
     <>
     <div className="header">
       <div className="titlediv">
-      <h1 className="title">Revestir</h1>
+      <h1 className="title">REvestir</h1>
       </div>
       <div className="divpheader">
       <p>início</p>

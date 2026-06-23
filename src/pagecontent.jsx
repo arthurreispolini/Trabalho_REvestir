@@ -18,8 +18,26 @@ function PageContent(){
     <div className="linha"></div>
 <p>Categorias</p>
 <div className="linha"></div>
+
 </div>
+
 <div className="cards-categoria">
+
+<div className="card1"></div>
+<div className="card2"></div>
+<div className="card3"></div>
+<div className="card4"></div>
+
+</div>
+
+<div className="destaques">
+
+ <div className="linha2"></div>
+ <p>Destaques</p>
+ <div className="linha2"></div>
+</div>
+
+      <div className="cards-categoria">
 
 <div className="card1"></div>
 <div className="card2"></div>
