@@ -43,6 +43,10 @@ body{
     gap: 1.5rem;
     color: #fff;
 }
+.iconescadastrocart :hover{
+    color: aqua;
+    cursor: pointer;
+}
 .title{
   font-family: "Montserrat", sans-serif;
   font-size: 3rem;
@@ -56,18 +60,6 @@ body{
 .fundologin{
     background-image: url("./assets/foto-revestir.png");
 }
-/* .barrapesquisa{
-    border-radius: 30px;
-    width: 15rem;
-    height: 1.5rem;
-    border: 1px solid rgba(194, 188, 188, 0.253);
-    position: absolute;
-    left: 14rem;
-    top: 2rem;
-}
-.barrapesquisa:focus {
-    outline: none;       
-}  */
 .iconecadastro{
     font-size: 2rem;
     color: white;
@@ -123,9 +115,6 @@ top: 15%;
     height: 1px;
     background-color: black;
 }
-.categorias p{
-    margin: 0;
-}
 .cards-categoria{
     display: flex;
     align-items: center;
@@ -147,6 +136,7 @@ top: 15%;
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .card1{
     background-image: url(./assets/categoria-masculino.png);
 }
@@ -160,7 +150,7 @@ top: 15%;
     background-image: url(./assets/acessorios.png);
 }
 .destaques{
- display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 3vw;
@@ -175,78 +165,178 @@ top: 15%;
     height: 1px;
     background-color: black;
 }
-
-
-
-/* .areacamisas{
-    display:flex;
-    border-radius: 30px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    margin-top: 2rem;
-}
-.card{
-  display: grid;
-  grid-template-rows: 60% 40%;
-  height: 25rem;
-  width: 20rem;
-  border: 1px solid black;
-  border-radius: 30px;
-  border-style: hidden;
-  box-shadow: 3px 3px 30px gray;
-  overflow: hidden;
-  transition: transform 1s ease;
-  flex-shrink: 0;
-}
-.card:hover{
-     transform:  scale(1.05);
-}
-.textodosprodutos{
+.cards-destaques{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #E0E0E0;
-    padding: 20px;
-    font-size: 30px;
+    gap: 4vw;
+    height: clamp(150px,17vw, 350px);
 }
-.preco{
- padding-bottom: 40px;
- padding-right: 150px;
+.card5, .card6, .card7,.card8{
+    transition: transform 1s ease;
+    height: 25vh;
+    width: 17vw;
+    border: 1px solid rgba(0, 0, 0, 0.349);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 40%;
+    transition: transform 1s ease;
 }
+.card5:hover,.card6:hover,.card7:hover,.card8:hover{
+    transform: scale(1.05);
+}
+.card5-div1{
+    border-top-left-radius: 20px;
+     border-top-right-radius: 20px;
+    width: 17vw;
+    height: 15vh;
+    background-image: url(./assets/destaque1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 
-@media (max-width: 768px){
-.title{
-    font-size: 2rem;
 }
-.barrapesquisa{
-    width: 12rem;
-    left: 9.5rem;
-    top: 1.7rem;
+.card5-div2{
+    display: flex;
+    justify-content: center;
+    padding-top: 1vw;
 }
-.iconecadastro{
-    font-size: 2rem;
+.card5-div2 p{
+    padding-right: 10%;
 }
-.carrinho{
-    font-size: 2rem;
+.card6-div1{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 17vw;
+    height: 15vh;
+    background-image: url(./assets/destaque2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
+.card6-div2{
+    display: flex;
+    justify-content: center;
+    padding-top: 1vw;
 }
-@media (max-width: 430px){
-    .title{
-        font-size: 1.3rem;
-    }
-    .barrapesquisa{
-        width: 12rem;
-        left: 6rem;
-        top: 1.7rem;
-    }
-    .iconecadastro{
-    font-size: 1rem;
-    }
-.carrinho{
-    font-size: 1rem;
-    }
-} */
+.card6-div2 p{
+    padding-right: 10%;
+}
+.card7-div1{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 17vw;
+    height: 15vh;
+    background-image: url(./assets/destaque3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.card7-div2{
+    display: flex;
+    justify-content: center;
+    padding-top: 1vw;
+}
+.card7-div2 p{
+    padding-right: 10%;
+}
+.card8-div1{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 17vw;
+    height: 15vh;
+    background-image: url(./assets/destaque4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.card8-div2{
+    display: flex;
+    justify-content: center;
+    padding-top: 1vw;
+}
+.card8-div2 p{
+    padding-right: 10%;
+}
+.footerdiv{
+    width: 100%;
+    height: clamp(350px, 4vw, 20vh);
+    background-image: url(./assets/footer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    color: #fff;
+}
+.footer-nav h1{
+    font-size: 3rem;
+    padding-bottom: 10%;
+}
+.footer-nav p{
+    padding: 3%;
+}
+.footer-nav p:hover{
+    color: aqua;
+    cursor: pointer;
+}
+.contato-footer{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    color: #fff;
+}
+.contato-footer h1{
+    font-size: 3rem;
+    padding-bottom: 8%;
+}
+.contato-footer p{
+    padding: 7%;
+}
+.contato-footer p:hover{
+    color: aqua;
+    cursor: pointer;
+}
+.informacoes-footer{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    color: #fff;
+}
+.informacoes-footer h1{
+    font-size: 3rem;
+    padding-bottom: 10%;
+}
+.informacoes-footer p{
+    padding: 3%;
+}
+.social-footer{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    color: #fff;
+}
+.social-footer h1{
+    font-size: 3rem;
+    padding-bottom: 8%;
+}
+.social-footer p{
+    padding: 7%;
+}
+.social-footer p:hover{
+    color: aqua;
+    cursor: pointer;
+}
