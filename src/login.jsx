@@ -1,5 +1,5 @@
 import "./login.css"
-import modeloformulario from "./assets/modelo-formulario.png"
+import modeloformulario from "./assets/login/modelo-formulario.png"
 
 function Login() {
     

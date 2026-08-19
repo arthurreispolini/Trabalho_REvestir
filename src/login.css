@@ -6,7 +6,7 @@
 .fundologin{
     height: 100vh;
     width: 50vw;
-    background-image: url(./assets/modelo-formulario.png);
+    background-image: url(./assets/login/modelo-formulario.png);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;

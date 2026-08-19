@@ -1,3 +1,14 @@
+.divimageminicial{
+    background-image: url("./assets/pagecontent/fotoinicial.png");
+    background-size: cover;
+    width: 100%;
+    height: clamp(150px, 45vw, 500px);
+}
+.divimageminicial{
+color: #fff;
+position: relative;
+
+}
 .divimageminicial h1{
     font-family: "Prata", serif;
     font-weight: normal;
@@ -55,16 +66,16 @@ top: 15%;
 }
 
 .card1{
-    background-image: url(./assets/categoria-masculino.png);
+    background-image: url(./assets/categorias/categoria-masculino.png);
 }
 .card2{
-    background-image: url(./assets/categoria-feminina.png);
+    background-image: url(./assets/categorias/categoria-feminina.png);
 }
 .card3{
-    background-image: url(./assets/calcados.png);
+    background-image: url(./assets/categorias/calcados.png);
 }
 .card4{
-    background-image: url(./assets/acessorios.png);
+    background-image: url(./assets/categorias/acessorios.png);
 }
 .destaques{
     display: flex;
@@ -108,7 +119,7 @@ top: 15%;
      border-top-right-radius: 20px;
     width: 17vw;
     height: 15vh;
-    background-image: url(./assets/destaque1.png);
+    background-image: url(./assets/destaques/destaque1.png);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -126,7 +137,7 @@ top: 15%;
     border-top-right-radius: 20px;
     width: 17vw;
     height: 15vh;
-    background-image: url(./assets/destaque2.png);
+    background-image: url(./assets/destaques/destaque2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -145,7 +156,7 @@ top: 15%;
     border-top-right-radius: 20px;
     width: 17vw;
     height: 15vh;
-    background-image: url(./assets/destaque3.png);
+    background-image: url(./assets/destaques/destaque3.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -164,7 +175,7 @@ top: 15%;
     border-top-right-radius: 20px;
     width: 17vw;
     height: 15vh;
-    background-image: url(./assets/destaque4.png);
+    background-image: url(./assets/destaques/destaque4.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -181,7 +192,7 @@ top: 15%;
 .footerdiv{
     width: 100%;
     height: clamp(350px, 4vw, 20vh);
-    background-image: url(./assets/footer.png);
+    background-image: url(./assets/pagecontent/footer.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;

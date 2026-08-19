@@ -1,16 +1,16 @@
 import "./App.css";
 import "./pagecontent.css"
 import Header from "./header"
-import modeloinicial from './assets/fotoinicial.png'
-import masculino from './assets/categoria-masculino.png'
-import feminino from './assets/categoria-feminina.png'
-import acessorios from './assets/acessorios.png'
-import calcados from './assets/calcados.png'
-import destaque1 from "./assets/destaque1.png"
-import destaque2 from "./assets/destaque2.png"
-import destaque3 from "./assets/destaque3.png"
-import destaque4 from "./assets/destaque4.png"
-import footer from "./assets/footer.png"
+import modeloinicial from './assets/pagecontent/fotoinicial.png'
+import masculino from './assets/categorias/categoria-masculino.png'
+import feminino from './assets/categorias/categoria-feminina.png'
+import acessorios from './assets/categorias/acessorios.png'
+import calcados from './assets/categorias/calcados.png'
+import destaque1 from "./assets/destaques/destaque1.png"
+import destaque2 from "./assets/destaques/destaque2.png"
+import destaque3 from "./assets/destaques/destaque3.png"
+import destaque4 from "./assets/destaques/destaque4.png"
+import footer from "./assets/pagecontent/footer.png"
 
 function PageContent(){
 
