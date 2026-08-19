@@ -1,4 +1,5 @@
 import "./App.css";
+import "./pagecontent.css"
 import Header from "./header"
 import modeloinicial from './assets/fotoinicial.png'
 import masculino from './assets/categoria-masculino.png'
