@@ -1,6 +1,6 @@
 .header{
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 40% 45% 15%;
     grid-template-rows: 100%;
     align-items: center;
     width: 100%;
@@ -8,18 +8,64 @@
     background-color: #000;
     position: relative;
 }
-.titlediv{
+ .titlediv{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
+    gap: 3%;
+} 
+.title{
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(2rem, 5vw + 1rem, 3rem);
+  font-weight: 200;
+  color: #fff;
+}
+.pesquisa {
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 35px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: width 0.8s ease;
+    margin-top: 1.5%
+}
+.pesquisa.aberta {
+    width: 250px;
+    border: 1px solid rgba(255, 255, 255, 0.411);
+}
+.pesquisa.aberta .input_lupa {
+    pointer-events: auto;
+}
+.input_lupa{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    padding: 0 10px;
+    flex: 1;
+    min-width: 0;
+    pointer-events: none;
+}
+.lupa{
+     min-width: 30px;
+    font-size: clamp(24px, 3vw + 24px, 30px);
+    color: white;
+    cursor: pointer;
+    margin-top: 1%;
+    flex-shrink: 0;
 }
 .divpheader{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    font-family: "Montserrat", sans-serif;
     color: #fff;
-     font-family: "Montserrat", sans-serif;
+    gap: 5vw;
+    font-size: clamp(0.875rem, 0.6vw + 1rem, 2rem);
+   /* font-size: clamp(0.875rem, 0.2vw + 0.8rem, 2rem +  5vw); */
 }
 .divpheader :hover{
     color: aqua;
@@ -29,33 +75,17 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 1rem;
-    gap: 1.5rem;
+    gap: 4%;
     color: #fff;
 }
 .iconescadastrocart :hover{
     color: aqua;
     cursor: pointer;
 }
-.title{
-  font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
-  font-weight: 200;
-  padding-right: 4rem;
-  color: #fff;
-}
- .lupa{
-    font-size: 2rem;
-}
-.fundologin{
-    background-image: url("./assets/foto-revestir.png");
-}
 .iconecadastro{
-    font-size: 2rem;
+    font-size: clamp(0.5rem, 1rem + 1vw, 2.3rem);
     color: white;
 }
 .carrinho{ 
-    font-size: 2rem; 
-}
-.fundologin{
-    background-image: url(./assets/foto-revestir.png);
+    font-size: clamp(0.5rem, 1rem + 1vw, 2.3rem);
 }
