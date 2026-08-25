@@ -12,7 +12,7 @@ function Cardproduto({ nome, preco, imagem }) {
     <div className="card-destaque">
 
       <div className="card-destaque-div1">
-        <img src={destaque2}/>
+        <img src={imagem}/>
         <p onClick={() => setFavorito(!favorito)}>
           {favorito ? <FaHeart className="coracao" /> : <FaRegHeart />}
         </p>

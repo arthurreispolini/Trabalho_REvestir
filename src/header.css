@@ -64,7 +64,7 @@
     font-family: "Montserrat", sans-serif;
     color: #fff;
     gap: 5vw;
-    font-size: clamp(0.875rem, 0.6vw + 1rem, 1.5rem);
+    font-size: clamp(0.875rem, 0.6vw + 0.8rem, 1.5rem);
 }
 .divpheader :hover{
     color: aqua;
@@ -74,7 +74,7 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 1rem;
-    gap: 4%;
+    gap: 10%;
     color: #fff;
 }
 .iconescadastrocart :hover{

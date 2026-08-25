@@ -9,7 +9,7 @@ import masculino from './assets/categorias/categoria-masculino.png'
 import feminino from './assets/categorias/categoria-feminina.png'
 import acessorios from './assets/categorias/acessorios.png'
 import calcados from './assets/categorias/calcados.png'
-import destaque1 from "./assets/destaques/destaque1.png"
+import destaque1 from "./assets/destaques/destaque1.jpg"
 import destaque2 from "./assets/destaques/destaque2.png"
 import destaque3 from "./assets/destaques/destaque3.png"
 import destaque4 from "./assets/destaques/destaque4.png"
@@ -20,25 +20,25 @@ function PageContent(){
 const destaques = [
     {
         id:1,
-        nome: "Camisa Oversized Cinza",
+        nome: "Camisa oversized branca",
         preco: 159.99,
         imagem: destaque1
     },
       {
         id:2,
-        nome: "Camisa",
+        nome: "Camisa oversized cinza escura",
         preco: 159.99,
         imagem: destaque2
     },
       {
         id:3,
-        nome: "Camisa",
+        nome: "Camisa oversized marrom escura",
         preco: 159.99,
         imagem: destaque3
     },
       {
         id:4,
-        nome: "Camisa",
+        nome: "Camisa oversized beje",
         preco: 159.99,
         imagem: destaque4
     }
@@ -77,7 +77,7 @@ const destaques = [
 
 
       <div className="cards-destaques">
-        
+
         {destaques.map((destaque) =>(
  <Cardproduto
      key={destaque.id}
