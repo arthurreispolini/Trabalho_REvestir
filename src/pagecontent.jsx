@@ -1,6 +1,9 @@
-import "./App.css";
 import "./pagecontent.css"
 import Header from "./header"
+import Cardproduto from "./cardproduto";
+import { useState } from "react";
+import { FaHeart } from "react-icons/fa";
+import { FaRegHeart } from "react-icons/fa";
 import modeloinicial from './assets/pagecontent/fotoinicial.png'
 import masculino from './assets/categorias/categoria-masculino.png'
 import feminino from './assets/categorias/categoria-feminina.png'
@@ -14,7 +17,35 @@ import footer from "./assets/pagecontent/footer.png"
 
 function PageContent(){
 
+const destaques = [
+    {
+        id:1,
+        nome: "Camisa Oversized Cinza",
+        preco: 159.99,
+        imagem: destaque1
+    },
+      {
+        id:2,
+        nome: "Camisa",
+        preco: 159.99,
+        imagem: destaque2
+    },
+      {
+        id:3,
+        nome: "Camisa",
+        preco: 159.99,
+        imagem: destaque3
+    },
+      {
+        id:4,
+        nome: "Camisa",
+        preco: 159.99,
+        imagem: destaque4
+    }
+]
+
  return(
+
     <div className="pagecontent">
 <Header/>
     <div className="divimageminicial">
@@ -44,38 +75,19 @@ function PageContent(){
  <div className="linha2"></div>
 </div>
 
+
       <div className="cards-destaques">
-
-<div className="card5">
-    <div className="card5-div1"></div>
-    <div className="card5-div2">
-    <p>Camisa marrom <br />com logo</p>
-    <span>R$:99,99</span>
-    </div>
-</div>
-<div className="card6">
-      <div className="card6-div1"></div>
-    <div className="card6-div2">
-    <p>Camisa preta <br />sem estampa</p>
-    <span>R$:99,99</span>
-    </div>
-</div>
-<div className="card7">
-      <div className="card7-div1"></div>
-    <div className="card7-div2">
-    <p>Camisa marrom <br />sem estampa</p>
-    <span>R$:99,99</span>
-    </div>
-</div>
-<div className="card8">
-      <div className="card8-div1"></div>
-    <div className="card8-div2">
-    <p>Camisa branca <br />sem estampa</p>
-    <span>R$:99,99</span>
-    </div>
+        
+        {destaques.map((destaque) =>(
+ <Cardproduto
+     key={destaque.id}
+    nome={destaque.nome}
+    preco={destaque.preco}
+    imagem={destaque.imagem}
+ />
+        ))}
 </div>
 
-</div>
        <div className="footerdiv">
 <div className="footer-nav">
 <h1>Navegação</h1>

@@ -64,8 +64,7 @@
     font-family: "Montserrat", sans-serif;
     color: #fff;
     gap: 5vw;
-    font-size: clamp(0.875rem, 0.6vw + 1rem, 2rem);
-   /* font-size: clamp(0.875rem, 0.2vw + 0.8rem, 2rem +  5vw); */
+    font-size: clamp(0.875rem, 0.6vw + 1rem, 1.5rem);
 }
 .divpheader :hover{
     color: aqua;

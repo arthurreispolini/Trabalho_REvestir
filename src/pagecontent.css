@@ -99,97 +99,16 @@ top: 15%;
     align-items: center;
     justify-content: center;
     gap: 4vw;
-    height: clamp(150px,17vw, 350px);
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
-.card5, .card6, .card7,.card8{
-    transition: transform 1s ease;
-    height: 25vh;
-    width: 17vw;
-    border: 1px solid rgba(0, 0, 0, 0.349);
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 60% 40%;
-    transition: transform 1s ease;
-}
-.card5:hover,.card6:hover,.card7:hover,.card8:hover{
-    transform: scale(1.05);
-}
-.card5-div1{
-    border-top-left-radius: 20px;
-     border-top-right-radius: 20px;
-    width: 17vw;
-    height: 15vh;
-    background-image: url(./assets/destaques/destaque1.png);
-    background-size: cover;
-    background-repeat: no-repeat;
 
-}
-.card5-div2{
-    display: flex;
-    justify-content: center;
-    padding-top: 1vw;
-}
-.card5-div2 p{
-    padding-right: 10%;
-}
-.card6-div1{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 17vw;
-    height: 15vh;
-    background-image: url(./assets/destaques/destaque2.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 
-}
-.card6-div2{
-    display: flex;
-    justify-content: center;
-    padding-top: 1vw;
-}
-.card6-div2 p{
-    padding-right: 10%;
-}
-.card7-div1{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 17vw;
-    height: 15vh;
-    background-image: url(./assets/destaques/destaque3.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 
-}
-.card7-div2{
-    display: flex;
-    justify-content: center;
-    padding-top: 1vw;
-}
-.card7-div2 p{
-    padding-right: 10%;
-}
-.card8-div1{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 17vw;
-    height: 15vh;
-    background-image: url(./assets/destaques/destaque4.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 
-}
-.card8-div2{
-    display: flex;
-    justify-content: center;
-    padding-top: 1vw;
-}
-.card8-div2 p{
-    padding-right: 10%;
-}
+
+
+
 .footerdiv{
     width: 100%;
     height: clamp(350px, 4vw, 20vh);
