@@ -103,89 +103,72 @@ top: 15%;
     padding-top: 2%;
     padding-bottom: 2%;
 }
-
-
-
-
-
-
-
 .footerdiv{
     width: 100%;
-    height: clamp(350px, 4vw, 20vh);
     background-image: url(./assets/pagecontent/footer.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80% 20%;
+    grid-auto-flow: row;
+    color: white;
 }
-.footer-nav{
+.footer-navegacao{
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
     flex-direction: column;
-    align-items:center;
-    justify-content: center;
-    color: #fff;
 }
-.footer-nav h1{
-    font-size: 3rem;
-    padding-bottom: 10%;
+.footer-navegacao h1{
+  font-size: clamp(20px, 5vw, 50px);
+  padding-bottom: clamp(20px, 8vh, 120px );
 }
-.footer-nav p{
-    padding: 3%;
+.footer-navegacao p{
+ padding: clamp(10px, 1vh, 30px);
 }
-.footer-nav p:hover{
-    color: aqua;
-    cursor: pointer;
+.footer-contato{
+     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
 }
-.contato-footer{
+.footer-contato h1{
+  font-size: clamp(20px, 5vw, 50px);
+  padding-bottom: clamp(20px, 8vh, 120px );
+}
+.footer-contato p{
+ padding: clamp(20px, 2vh, 40px);
+}
+.footer-informações{
+     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.footer-informações h1{
+    font-size: clamp(20px, 5vw, 50px);
+    padding-bottom: clamp(20px, 8vh, 120px );
+}
+.footer-informações p{
+ padding: clamp(10px, 1vh, 30px);
+}
+.redes-sociais-footer{
+    grid-column: span 3;
     display: flex;
-    flex-direction: column;
-    align-items:center;
     justify-content: center;
-    color: #fff;
+    padding-top: 6vh;
+    padding-bottom: 1.5vh;
+    align-items: center;
+    gap: 5vw;
 }
-.contato-footer h1{
-    font-size: 3rem;
-    padding-bottom: 8%;
+.redes-sociais p{
+    margin-top: 10%;
 }
-.contato-footer p{
-    padding: 7%;
+.instagram{
+
 }
-.contato-footer p:hover{
-    color: aqua;
-    cursor: pointer;
-}
-.informacoes-footer{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: center;
-    color: #fff;
-}
-.informacoes-footer h1{
-    font-size: 3rem;
-    padding-bottom: 10%;
-}
-.informacoes-footer p{
-    padding: 3%;
-}
-.social-footer{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: center;
-    color: #fff;
-}
-.social-footer h1{
-    font-size: 3rem;
-    padding-bottom: 8%;
-}
-.social-footer p{
-    padding: 7%;
-}
-.social-footer p:hover{
-    color: aqua;
-    cursor: pointer;
+.x{
+    
 }

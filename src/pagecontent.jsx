@@ -4,6 +4,9 @@ import Cardproduto from "./cardproduto";
 import { useState } from "react";
 import { FaHeart } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import modeloinicial from './assets/pagecontent/fotoinicial.png'
 import masculino from './assets/categorias/categoria-masculino.png'
 import feminino from './assets/categorias/categoria-feminina.png'
@@ -89,41 +92,33 @@ const destaques = [
 </div>
 
        <div className="footerdiv">
-<div className="footer-nav">
+<div className="footer-navegacao">
 <h1>Navegação</h1>
-      <p>Início</p>
-      <p>Coleções</p>
-      <p>Masculino</p>
-      <p>Feminino</p>
-      <p>Acessórios</p>
+<p>Início</p>
+<p>Coleções</p>
+<p>Masculino</p>
+<p>Feminino</p>
 </div>
-
-<div className="contato-footer">
+<div className="footer-contato">
     <h1>Contato</h1>
-<p>REvestir@gmail.com</p>
-<p>(35) 99960-0196</p>
-<p>Niterói - Rio de Janeiro</p>
+    <p>REvestir@gmail.com</p>
+    <p>(35) 9960-0196</p>
+    <p>Niterói - Rio de janeiro</p>
 </div>
-
-<div className="informacoes-footer">
-<h1>Informações</h1>
-<p>Frete para todo o Brasil</p>
-<p>Trocas e devoluções</p>
-<p>Política de privacidade</p>
-<p>Termos de uso</p>
-<p>Perguntas Frequentes</p>
+<div className="footer-informações">
+   <h1>Informações</h1>
+   <p>Frete para todo o país</p>
+   <p>Doações e cashback</p>
+   <p>Política de privacidade</p>
+   <p>Perguntas frequentes</p>
 </div>
-
-<div className="social-footer">
-<h1>Redes Sociais</h1>
-<p>Instagram</p>
-<p>TikTok</p>
-<p>Facebook</p>
+<div className="redes-sociais-footer">
+    <p> <FaInstagram className="instagram"/> instagram</p>
+    <p> <FaTiktok /> tiktok</p>
+    <p> <FaXTwitter className="x" />X</p>
 </div>
        </div>
-    </div>
-            
- )
-}
+
+</div>   )}
 
 export default PageContent

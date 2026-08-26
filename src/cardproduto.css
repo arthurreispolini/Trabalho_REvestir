@@ -43,7 +43,7 @@
 }
 .nome-card-produto{
     position: absolute;
-    font-size: clamp(14px, 2vw, 22px);
+    font-size: clamp(10px, 2vw, 22px);
     top: 2%;
     left: 2%;
     color: rgba(0, 0, 0, 0.699);
