@@ -5,7 +5,6 @@ import { useState } from "react";
 import { FaHeart } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import modeloinicial from './assets/pagecontent/fotoinicial.png'
 import masculino from './assets/categorias/categoria-masculino.png'
@@ -17,6 +16,11 @@ import destaque2 from "./assets/destaques/destaque2.png"
 import destaque3 from "./assets/destaques/destaque3.png"
 import destaque4 from "./assets/destaques/destaque4.png"
 import footer from "./assets/pagecontent/footer.png"
+import gmail from "./assets/pagecontent/gmail.svg"
+import location from "./assets/pagecontent/location.svg"
+import zap from "./assets/pagecontent/zap.svg"
+import tiktok from "./assets/pagecontent/icons8-tiktok.svg"
+
 
 function PageContent(){
 
@@ -101,8 +105,11 @@ const destaques = [
 </div>
 <div className="footer-contato">
     <h1>Contato</h1>
-    <p>REvestir@gmail.com</p>
-    <p>(35) 9960-0196</p>
+    <img src={gmail} className="gmail" />
+    <p> REvestir@gmail.com</p>
+    <img src={zap}  className="zap"/>
+    <p> (35) 9960-0196</p>
+    <img src={location} className="location" />
     <p>Niterói - Rio de janeiro</p>
 </div>
 <div className="footer-informações">
@@ -113,9 +120,12 @@ const destaques = [
    <p>Perguntas frequentes</p>
 </div>
 <div className="redes-sociais-footer">
-    <p> <FaInstagram className="instagram"/> instagram</p>
-    <p> <FaTiktok /> tiktok</p>
-    <p> <FaXTwitter className="x" />X</p>
+    <FaInstagram className="instagram"/> 
+    <p className="redes-sociais-footer-p">instagram</p>
+    <img src={tiktok} className="tiktok" />
+    <p className="redes-sociais-footer-p">  tiktok</p>
+    <FaXTwitter className="x" />
+    <p className="redes-sociais-footer-p">Twitter (X)</p>
 </div>
        </div>
 
