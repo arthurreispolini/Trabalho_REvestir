@@ -105,12 +105,12 @@ const destaques = [
 </div>
 <div className="footer-contato">
     <h1>Contato</h1>
-    <img src={gmail} className="gmail" />
-    <p> REvestir@gmail.com</p>
-    <img src={zap}  className="zap"/>
-    <p> (35) 9960-0196</p>
-    <img src={location} className="location" />
-    <p>Niterói - Rio de janeiro</p>
+    
+    <p> <img src={gmail} className="gmail" /> REvestir@gmail.com</p>
+    
+    <p> <img src={zap}  className="zap"/> (35) 9960-0196</p>
+    
+    <p> <img src={location} className="location" /> Niterói - Rio de janeiro</p>
 </div>
 <div className="footer-informações">
    <h1>Informações</h1>
