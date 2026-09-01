@@ -1,5 +1,6 @@
 import "./pagecontent.css"
 import Header from "./header"
+import CardsProduto from "./cardspage"
 import Cardproduto from "./cardproduto";
 import { useState } from "react";
 import { FaHeart } from "react-icons/fa";
