@@ -9,3 +9,5 @@ function CardsProduto() {
         </div>
 
 )}
+
+export default CardsProduto
