@@ -3,6 +3,7 @@ import Header from "./header"
 import CardsProduto from "./cardspage"
 import Cardproduto from "./cardproduto";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { FaHeart } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -101,7 +102,7 @@ const destaques = [
 <h1>Navegação</h1>
 <p>Início</p>
 <p>Coleções</p>
-<p>Masculino</p>
+<Link to= "/produtos"><p>Masculino</p> </Link>
 <p>Feminino</p>
 </div>
 <div className="footer-contato">
