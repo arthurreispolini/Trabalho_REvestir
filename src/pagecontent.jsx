@@ -1,6 +1,6 @@
 import "./pagecontent.css"
 import Header from "./header"
-import CardsProduto from "./cardspage"
+import CardsProduto from "./produtos_page"
 import Cardproduto from "./cardproduto";
 import { useState } from "react";
 import { Link } from "react-router-dom";

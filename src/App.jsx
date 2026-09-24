@@ -2,7 +2,7 @@ import "./App.css";
 import Header from './header'
 import PageContent from "./pagecontent";
 import Login from "./login"
-import CardsProdutos from "./cardspage"
+import CardsProdutos from "./produtos_page.jsx"
 import { Link, Route, Routes, NavLink, BrowserRouter} from 'react-router-dom'
 
 function App(){
