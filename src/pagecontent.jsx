@@ -100,15 +100,18 @@ const destaques = [
        <div className="footerdiv">
 <div className="footer-navegacao">
 <h1>Navegação</h1>
-<p>Início</p>
-<p>Coleções</p>
+
+<Link to="/"><p>Início</p></Link>
+<Link to= "/produtos"><p>Coleções</p></Link>
 <Link to= "/produtos"><p>Masculino</p> </Link>
-<p>Feminino</p>
+<Link to= "/produtos"><p>Feminino</p></Link>
 </div>
 <div className="footer-contato">
     <h1>Contato</h1>
     
-    <p> <img src={gmail} className="gmail" /> REvestir@gmail.com</p>
+    <a   href="https://mail.google.com/mail/?view=cm&fs=1&to=revestir991@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"><p> <img src={gmail} className="gmail" /> REvestir@gmail.com</p></a>
     
     <p> <img src={zap}  className="zap"/> (35) 9960-0196</p>
     

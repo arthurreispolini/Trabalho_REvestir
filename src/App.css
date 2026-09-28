@@ -20,3 +20,7 @@ body{
 color: #fff;
 position: relative;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}

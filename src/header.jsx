@@ -28,7 +28,9 @@ const[input,Setinput] = useState(false)
 </div>
       </div>
       <div className="divpheader">
+        <Link to= "/">
       <p>Início</p>
+        </Link>
       <p>Masculino</p>
       <p>Feminino</p>
       </div>
