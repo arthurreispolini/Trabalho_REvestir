@@ -31,8 +31,12 @@ const[input,Setinput] = useState(false)
         <Link to= "/">
       <p>Início</p>
         </Link>
+        <Link to= "/produtos">
       <p>Masculino</p>
+        </Link>
+        <Link to= "/produtos">
       <p>Feminino</p>
+        </Link>
       </div>
       <div className="iconescadastrocart">
 <Link to="/login">
