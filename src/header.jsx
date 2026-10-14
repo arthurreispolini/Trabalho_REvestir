@@ -5,16 +5,22 @@ import { FaShoppingCart } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { useCarrinho } from "./CarrinhoContext";
+import logo from "./assets/logo_revestir.png";
 
 
 function Header() {
 const[input,Setinput] = useState(false)
+const { totalItens } = useCarrinho()
 
   return (
     <>
     <div className="header">
       <div className="titlediv">
-      <h1 className="title">REvestir</h1>
+      <Link to="/" className="logo-link">
+        <img src={logo} alt="Logo REvestir" className="logo-header" />
+        <h1 className="title">REvestir</h1>
+      </Link>
      <div className={`pesquisa ${input ? "aberta" : ""}`}>
   <FiSearch
     onClick={() => Setinput(!input)}
@@ -42,8 +48,9 @@ const[input,Setinput] = useState(false)
 <Link to="/login">
 <FaUser  className="iconecadastro"/>
 </Link>
-<Link to= "/Carrinho">
+<Link to= "/carrinho" className="carrinho-link">
 <FaShoppingCart  className="carrinho" />
+{totalItens > 0 && <span className="carrinho-badge">{totalItens}</span>}
 </Link>
       </div>
     </div>

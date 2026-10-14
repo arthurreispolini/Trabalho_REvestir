@@ -280,6 +280,7 @@ function CardsProdutos() {
                 produtosFiltrados.map((produto) => (
                   <Cardproduto
                     key={produto.id}
+                    id={produto.id}
                     nome={produto.nome}
                     preco={produto.preco}
                     imagem={produto.imagem}

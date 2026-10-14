@@ -1,12 +1,7 @@
-import { useState } from "react"
 import "./carrinho.css"
-// import camiseta from "./assets/camiseta_marrom.png"
-// import moletom from "./assets/moletom_preto.png"
-
-const ITENS_INICIAIS = [
-    // { id: 1, nome: "Camiseta oversized marrom escura", tamanho: "M", cor: "Marrom", preco: 159.99, quantidade: 1, imagem: camiseta },
-    // { id: 2, nome: "Moletom REvestir", tamanho: "G", cor: "Preto", preco: 229.99, quantidade: 1, imagem: moletom },
-]
+import { Link } from "react-router-dom"
+import Header from "./header"
+import { useCarrinho } from "./CarrinhoContext"
 
 const moeda = (valor) =>
     valor.toLocaleString("pt-BR", { style: "currency", currency: "BRL" })
@@ -18,64 +13,11 @@ const Icone = ({ children, className }) => (
 )
 
 function Carrinho() {
-    const [itens, setItens] = useState(ITENS_INICIAIS)
-
-    const totalItens = itens.reduce((soma, i) => soma + i.quantidade, 0)
-    const subtotal = itens.reduce((soma, i) => soma + i.preco * i.quantidade, 0)
-
-    function alterarQuantidade(id, delta) {
-        setItens((atual) =>
-            atual.map((i) =>
-                i.id === id ? { ...i, quantidade: Math.max(1, i.quantidade + delta) } : i
-            )
-        )
-    }
-
-    function remover(id) {
-        setItens((atual) => atual.filter((i) => i.id !== id))
-    }
+    const { itens, totalItens, subtotal, alterarQuantidade, remover } = useCarrinho()
 
     return (
         <div className="carrinho-page">
-            {/* Cabeçalho */}
-            <header className="cab">
-                <div className="cab-conteudo">
-                    <a href="/" className="cab-logo">REvestir</a>
-
-                    <label className="cab-busca">
-                        <Icone>
-                            <circle cx="11" cy="11" r="7" />
-                            <path d="M20 20l-4-4" />
-                        </Icone>
-                        <input type="text" placeholder="Pesquisar" />
-                    </label>
-
-                    <nav className="cab-nav">
-                        <a href="/">Inicio</a>
-                        <a href="/masculino">Masculino</a>
-                        <a href="/feminino">Feminino</a>
-                        <a href="/acessorios">Acessórios</a>
-                        <a href="/calcados">Calçados</a>
-                    </nav>
-
-                    <div className="cab-acoes">
-                        <a href="/login" aria-label="Minha conta">
-                            <Icone>
-                                <circle cx="12" cy="8" r="4" />
-                                <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7" />
-                            </Icone>
-                        </a>
-                        <a href="/carrinho" className="cab-carrinho" aria-label="Carrinho">
-                            <Icone>
-                                <path d="M2 3h3l2.5 12h11L21 7H6" />
-                                <circle cx="9" cy="20" r="1.3" />
-                                <circle cx="17" cy="20" r="1.3" />
-                            </Icone>
-                            <span className="cab-badge">{totalItens}</span>
-                        </a>
-                    </div>
-                </div>
-            </header>
+            <Header />
 
             {/* Banner */}
             <section className="banner">
@@ -101,8 +43,8 @@ function Carrinho() {
 
                                 <div className="item-info">
                                     <h3>{item.nome}</h3>
-                                    <p>Tamanho: {item.tamanho}</p>
-                                    <p>Cor: {item.cor}</p>
+                                    {item.tamanho && <p>Tamanho: {item.tamanho}</p>}
+                                    {item.cor && <p>Cor: {item.cor}</p>}
                                     <strong>{moeda(item.preco)}</strong>
                                 </div>
 
@@ -127,10 +69,10 @@ function Carrinho() {
                         ))}
                     </div>
 
-                    <a href="/" className="continuar">
+                    <Link to="/" className="continuar">
                         <Icone><path d="M20 12H4M10 6l-6 6 6 6" /></Icone>
                         Continuar comprando
-                    </a>
+                    </Link>
                 </section>
 
                 <aside className="resumo">
@@ -173,10 +115,10 @@ function Carrinho() {
                 <div className="rodape-colunas">
                     <div>
                         <h4>Navegação</h4>
-                        <a href="/">Início</a>
-                        <a href="/colecoes">Coleções</a>
-                        <a href="/masculino">Masculino</a>
-                        <a href="/feminino">Feminino</a>
+                        <Link to="/">Início</Link>
+                        <Link to="/produtos">Coleções</Link>
+                        <Link to="/produtos">Masculino</Link>
+                        <Link to="/produtos">Feminino</Link>
                     </div>
 
                     <div>
@@ -197,10 +139,10 @@ function Carrinho() {
 
                     <div>
                         <h4>Informações</h4>
-                        <a href="/frete">Frete para todo o país</a>
-                        <a href="/devolucoes">Devoluções e cashback</a>
-                        <a href="/privacidade">Política de privacidade</a>
-                        <a href="/faq">Perguntas frequentes</a>
+                        <a href="#frete">Frete para todo o país</a>
+                        <a href="#devolucoes">Devoluções e cashback</a>
+                        <a href="#privacidade">Política de privacidade</a>
+                        <a href="#faq">Perguntas frequentes</a>
                     </div>
 
                     <div>

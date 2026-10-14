@@ -90,6 +90,7 @@ const destaques = [
         {destaques.map((destaque) =>(
  <Cardproduto
      key={destaque.id}
+    id={destaque.id}
     nome={destaque.nome}
     preco={destaque.preco}
     imagem={destaque.imagem}

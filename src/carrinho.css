@@ -33,7 +33,8 @@
     margin: 0;
 }
 
-.carrinho-page svg {
+.carrinho-page .principal svg,
+.carrinho-page .rodape svg {
     width: 22px;
     height: 22px;
     fill: none;
@@ -47,106 +48,6 @@
     font-family: inherit;
     color: inherit;
     cursor: pointer;
-}
-
-/* ---------- Cabeçalho ---------- */
-.cab {
-    height: 81px;
-    border-bottom: 1px solid var(--linha);
-    background: var(--fundo);
-}
-
-.cab-conteudo {
-    max-width: 1400px;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0 76px;
-    display: flex;
-    align-items: center;
-    gap: 72px;
-}
-
-.cab-logo {
-    font-size: 42px;
-    font-weight: 300;
-    letter-spacing: -0.02em;
-    line-height: 1;
-}
-
-.cab-busca {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    width: 280px;
-    height: 40px;
-    padding: 0 14px;
-    border: 1px solid var(--linha-forte);
-    border-radius: 6px;
-}
-
-.cab-busca svg {
-    flex: none;
-    width: 20px;
-    height: 20px;
-}
-
-.cab-busca input {
-    flex: 1;
-    min-width: 0;
-    border: 0;
-    outline: 0;
-    background: transparent;
-    color: var(--texto);
-    font: 400 13px "Inter", sans-serif;
-}
-
-.cab-busca input::placeholder {
-    color: var(--texto-suave);
-}
-
-.cab-nav {
-    display: flex;
-    gap: 58px;
-    font-size: 13.5px;
-    margin-left: auto;
-}
-
-.cab-nav a:hover {
-    color: var(--creme);
-    text-decoration: underline;
-    text-underline-offset: 6px;
-}
-
-.cab-acoes {
-    display: flex;
-    align-items: center;
-    gap: 28px;
-    margin-left: auto;
-}
-
-.cab-acoes svg {
-    width: 28px;
-    height: 28px;
-}
-
-.cab-carrinho {
-    position: relative;
-    display: flex;
-}
-
-.cab-badge {
-    position: absolute;
-    top: -9px;
-    right: -11px;
-    display: grid;
-    place-items: center;
-    width: 19px;
-    height: 19px;
-    border-radius: 50%;
-    background: #cfc6bb;
-    color: #1a1512;
-    font-size: 11px;
-    font-weight: 600;
 }
 
 /* ---------- Banner ---------- */
@@ -487,15 +388,6 @@
 
 /* ---------- Responsivo ---------- */
 @media (max-width: 1100px) {
-    .cab-conteudo {
-        gap: 28px;
-        padding: 0 28px;
-    }
-
-    .cab-nav {
-        display: none;
-    }
-
     .principal {
         grid-template-columns: 1fr;
         padding: 36px 28px;
@@ -513,21 +405,6 @@
 }
 
 @media (max-width: 640px) {
-    .cab {
-        height: auto;
-    }
-
-    .cab-conteudo {
-        flex-wrap: wrap;
-        padding: 14px 16px;
-        gap: 14px;
-    }
-
-    .cab-busca {
-        order: 3;
-        width: 100%;
-    }
-
     .banner h1 {
         font-size: 42px;
     }
