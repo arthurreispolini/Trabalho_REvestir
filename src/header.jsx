@@ -42,7 +42,9 @@ const[input,Setinput] = useState(false)
 <Link to="/login">
 <FaUser  className="iconecadastro"/>
 </Link>
-<FaShoppingCart  className="carrinho"/>
+<Link to= "/Carrinho">
+<FaShoppingCart  className="carrinho" />
+</Link>
       </div>
     </div>
     </>
