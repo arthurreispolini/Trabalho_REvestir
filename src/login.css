@@ -1,3 +1,234 @@
-.login-page{
-background-image: url(".\src\assets\fundo_login.png");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap");
+
+.login-page {
+    --areia: #d3c3b3;
+    --areia-clara: #e4d8cb;
+    --texto-suave: rgba(228, 216, 203, 0.62);
+    --borda: rgba(228, 216, 203, 0.28);
+
+    box-sizing: border-box;
+    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 9vw;
+    background-image: url("./assets/fundo_login.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "DM Sans", system-ui, sans-serif;
+    color: var(--areia-clara);
+}
+
+.login-page *,
+.login-page *::before,
+.login-page *::after {
+    box-sizing: border-box;
+}
+
+/* Card de vidro */
+.login-card {
+    width: 100%;
+    max-width: 440px;
+    height: 80vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 56px 48px 40px;
+    border: 1px solid var(--borda);
+    border-radius: 18px;
+    background: rgba(18, 14, 11, 0.62);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+}
+
+.login-logo {
+    display: block;
+    width: 74px;
+    height: 74px;
+    margin: 0 auto 36px;
+    color: var(--areia);
+    filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.5));
+}
+
+.login-titulo {
+    margin: 0 0 12px;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 0.08em;
+    color: var(--areia);
+}
+
+.login-subtitulo {
+    margin: 0 0 40px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.7;
+    letter-spacing: 0.16em;
+    color: var(--texto-suave);
+}
+
+/* Formulário */
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-campo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 56px;
+    margin-bottom: 22px;
+    padding: 0 20px;
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.18);
+    transition: border-color 0.2s ease;
+}
+
+.login-campo:focus-within {
+    border-color: var(--areia);
+}
+
+.login-campo svg {
+    flex: none;
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: var(--areia-clara);
+    stroke-width: 1.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.login-campo input {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font: 400 15px "DM Sans", system-ui, sans-serif;
+    color: var(--areia-clara);
+}
+
+.login-campo input::placeholder {
+    color: var(--texto-suave);
+}
+
+/* Evita o fundo branco do autofill do navegador */
+.login-campo input:-webkit-autofill {
+    -webkit-text-fill-color: var(--areia-clara);
+    transition: background-color 9999s ease-in-out 0s;
+}
+
+.login-esqueceu {
+    align-self: flex-end;
+    margin-bottom: 34px;
+    font-size: 12.5px;
+    color: var(--areia-clara);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* Botões */
+.login-botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    height: 56px;
+    border-radius: 12px;
+    font: 500 15px "DM Sans", system-ui, sans-serif;
+    cursor: pointer;
+    transition: filter 0.2s ease, background-color 0.2s ease;
+}
+
+.login-botao svg {
+    width: 20px;
+    height: 20px;
+}
+
+.login-botao-principal {
+    border: 0;
+    background: var(--areia);
+    color: #1b1511;
+}
+
+.login-botao-principal svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.login-botao-principal:hover {
+    filter: brightness(1.07);
+}
+
+.login-botao-google {
+    border: 1px solid var(--borda);
+    background: rgba(0, 0, 0, 0.35);
+    color: var(--areia-clara);
+    font-weight: 400;
+}
+
+.login-botao-google:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.login-botao:focus-visible,
+.login-page a:focus-visible {
+    outline: 2px solid var(--areia);
+    outline-offset: 3px;
+}
+
+/* Divisor "ou" */
+.login-ou {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 22px 0;
+    font-size: 13px;
+    color: var(--texto-suave);
+}
+
+.login-ou::before,
+.login-ou::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--borda);
+}
+
+.login-cadastro {
+    margin: 30px 0 0;
+    text-align: center;
+    font-size: 14px;
+    color: var(--texto-suave);
+}
+
+.login-cadastro a {
+    color: var(--areia-clara);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* Telas menores: card centralizado */
+@media (max-width: 900px) {
+    .login-page {
+        justify-content: center;
+        padding: 24px 16px;
+        height: auto;
+    }
+
+    .login-card {
+        padding: 44px 28px 32px;
+    }
 }
