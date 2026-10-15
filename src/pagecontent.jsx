@@ -1,5 +1,6 @@
 import "./pagecontent.css"
 import Header from "./header"
+import Footer from "./footer"
 import CardsProduto from "./produtos_page"
 import Cardproduto from "./cardproduto";
 import { useState } from "react";
@@ -98,42 +99,7 @@ const destaques = [
         ))}
 </div>
 
-       <div className="footerdiv">
-<div className="footer-navegacao">
-<h1>Navegação</h1>
-
-<Link to="/"><p>Início</p></Link>
-<Link to= "/produtos"><p>Coleções</p></Link>
-<Link to= "/produtos"><p>Masculino</p> </Link>
-<Link to= "/produtos"><p>Feminino</p></Link>
-</div>
-<div className="footer-contato">
-    <h1>Contato</h1>
-    
-    <a   href="https://mail.google.com/mail/?view=cm&fs=1&to=revestir991@gmail.com"
-  target="_blank"
-  rel="noopener noreferrer"><p> <img src={gmail} className="gmail" /> REvestir@gmail.com</p></a>
-    
-    <p> <img src={zap}  className="zap"/> (35) 9960-0196</p>
-    
-    <p> <img src={location} className="location" /> Niterói - Rio de janeiro</p>
-</div>
-<div className="footer-informações">
-   <h1>Informações</h1>
-   <p>Frete para todo o país</p>
-   <p>Doações e cashback</p>
-   <p>Política de privacidade</p>
-   <p>Perguntas frequentes</p>
-</div>
-<div className="redes-sociais-footer">
-    <FaInstagram className="instagram"/> 
-    <p className="redes-sociais-footer-p">instagram</p>
-    <img src={tiktok} className="tiktok" />
-    <p className="redes-sociais-footer-p">  tiktok</p>
-    <FaXTwitter className="x" />
-    <p className="redes-sociais-footer-p">Twitter (X)</p>
-</div>
-       </div>
+       <Footer />
 
 </div>   )}
 

@@ -1,12 +1,14 @@
 .header{
     display: grid;
-    grid-template-columns: 40% 45% 15%;
+    grid-template-columns: 40% 42% 18%;
     grid-template-rows: 100%;
     align-items: center;
     width: 100%;
     height: 5rem;
     background-color: #000;
     position: relative;
+    position: fixed;
+    z-index: 90;
 }
  .titlediv{
     display: flex;
@@ -23,39 +25,63 @@
 .pesquisa {
     display: flex;
     align-items: center;
-    width: 30px;
-    height: 35px;
-    border: 1px solid transparent;
-    border-radius: 30px;
+    gap: 0.75rem;
+    box-sizing: border-box;
+    width: clamp(150px, 15vw, 240px);
+    height: 40px;
+    padding: 0 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
     overflow: hidden;
-    transition: width 0.8s ease;
-    margin-top: 1.5%
+    transition: width 0.4s ease, border-color 0.3s ease;
 }
-.pesquisa.aberta {
-    width: 250px;
-    border: 1px solid rgba(255, 255, 255, 0.411);
+.pesquisa:focus-within {
+    border-color: #fff;
 }
-.pesquisa.aberta .input_lupa {
-    pointer-events: auto;
+.lupa {
+    flex: none;
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
 }
-.input_lupa{
+.input_lupa {
+    flex: 1;
+    min-width: 0;
     width: 100%;
     border: none;
     outline: none;
     background: transparent;
-    color: white;
-    padding: 0 10px;
-    flex: 1;
-    min-width: 0;
-    pointer-events: none;
+    color: #fff;
+    font-size: 0.95rem;
+    font-family: inherit;
 }
-.lupa{
-     min-width: 30px;
-    font-size: clamp(24px, 3vw + 24px, 30px);
-    color: white;
-    cursor: pointer;
-    margin-top: 1%;
-    flex-shrink: 0;
+.input_lupa::placeholder {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Telas menores: a barra vira só a lupa e abre ao clicar */
+@media (max-width: 1200px) {
+    .pesquisa {
+        width: 40px;
+        padding: 0;
+        justify-content: center;
+        gap: 0;
+        border-color: transparent;
+    }
+    .pesquisa .input_lupa {
+        width: 0;
+        flex: 0;
+    }
+    .pesquisa.aberta {
+        width: clamp(160px, 40vw, 260px);
+        padding: 0 0.9rem;
+        justify-content: flex-start;
+        gap: 0.75rem;
+        border-color: rgba(255, 255, 255, 0.85);
+    }
+    .pesquisa.aberta .input_lupa {
+        flex: 1;
+    }
 }
 .divpheader{
     display: flex;
@@ -74,7 +100,7 @@
     display: flex;
     justify-content: flex-end;
     padding-right: 1rem;
-    gap: 10%;
+    gap: clamp(0.8rem, 1.5vw, 1.6rem);
     color: #fff;
 }
 .iconescadastrocart :hover{

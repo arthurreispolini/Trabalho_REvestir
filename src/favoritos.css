@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap");
+
+.favoritos-page {
+    --fundo: #0b0a09;
+    --linha: rgba(255, 255, 255, 0.14);
+    --texto: #f2ece4;
+    --texto-suave: rgba(242, 236, 228, 0.58);
+    --creme: #e9e0d5;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--fundo);
+    color: var(--texto);
+}
+
+.favoritos-page *,
+.favoritos-page *::before,
+.favoritos-page *::after {
+    box-sizing: border-box;
+}
+
+.favoritos-page h1,
+.favoritos-page h2,
+.favoritos-page h3,
+.favoritos-page p {
+    margin: 0;
+}
+
+/* ---------- Banner ---------- */
+.fav-banner {
+    height: 220px;
+    border-top: 1px solid var(--linha);
+    border-bottom: 1px solid var(--linha);
+    background-image:
+        linear-gradient(90deg, #0b0a09 0%, rgba(11, 10, 9, 0.85) 35%, rgba(11, 10, 9, 0.2) 75%),
+        url("./assets/produtos/banner_produtos.jpg");
+    background-size: cover;
+    background-position: center right;
+}
+
+.fav-banner-texto {
+    max-width: 1400px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.fav-banner h1 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(2.4rem, 4vw, 3.6rem);
+    line-height: 1.05;
+}
+
+.fav-banner p {
+    font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+    font-weight: 300;
+}
+
+/* ---------- Conteúdo ---------- */
+.fav-principal {
+    flex: 1;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 42px 76px 80px;
+}
+
+.fav-titulo {
+    margin-bottom: 24px;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.fav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 24px;
+}
+
+/* ---------- Card ---------- */
+.fav-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--linha);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.fav-card:hover {
+    border-color: rgba(255, 255, 255, 0.32);
+    transform: translateY(-3px);
+}
+
+.fav-card-img {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    background: #1a1714;
+}
+
+.fav-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.fav-card-coracao {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(11, 10, 9, 0.7);
+    color: #e25555;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.fav-card-coracao:hover {
+    transform: scale(1.1);
+    background: rgba(11, 10, 9, 0.9);
+}
+
+.fav-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+}
+
+.fav-card-info h3 {
+    font-size: 14.5px;
+    font-weight: 400;
+}
+
+.fav-card-info strong {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.fav-card-botao {
+    height: 44px;
+    margin-top: 8px;
+    border: 0;
+    border-radius: 5px;
+    background: var(--creme);
+    color: #1a1512;
+    font-size: 14px;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+}
+
+.fav-card-botao:hover {
+    filter: brightness(1.06);
+}
+
+/* ---------- Estado vazio ---------- */
+.fav-vazio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.fav-vazio > svg {
+    font-size: 2.6rem;
+    color: var(--texto-suave);
+}
+
+.fav-vazio h2 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.fav-vazio p {
+    color: var(--texto-suave);
+    font-size: 14px;
+}
+
+.fav-vazio-botao {
+    margin-top: 12px;
+    padding: 14px 32px;
+    border-radius: 5px;
+    background: var(--creme);
+    color: #1a1512;
+    font-size: 14px;
+}
+
+.fav-vazio-botao:hover {
+    filter: brightness(1.06);
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 900px) {
+    .fav-banner-texto,
+    .fav-principal {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+}
+
+@media (max-width: 520px) {
+    .fav-banner {
+        height: 180px;
+    }
+
+    .fav-banner-texto,
+    .fav-principal {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .fav-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .fav-card-info {
+        padding: 12px;
+    }
+}

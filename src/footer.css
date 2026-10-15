@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&display=swap");
+
+.rodape {
+    --linha: rgba(255, 255, 255, 0.14);
+    --creme: #e9e0d5;
+
+    box-sizing: border-box;
+    padding: 28px 0 22px;
+    border-top: 1px solid var(--linha);
+    color: #f2ece4;
+    background-color: #0b0a09;
+    background-image: linear-gradient(rgba(11, 10, 9, 0.78), rgba(11, 10, 9, 0.78)), url("./assets/banner_carrinho.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.rodape *,
+.rodape *::before,
+.rodape *::after {
+    box-sizing: border-box;
+}
+
+.rodape svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.rodape-colunas {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 76px 22px;
+    display: grid;
+    grid-template-columns: 1.15fr 1.1fr 1fr 0.9fr;
+    gap: 32px;
+    border-bottom: 1px solid var(--linha);
+}
+
+.rodape-colunas > div {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    font-size: 12.5px;
+}
+
+.rodape h4 {
+    margin-bottom: 7px;
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.rodape-colunas a:hover {
+    color: var(--creme);
+}
+
+.rodape-icone {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.rodape-icone svg {
+    flex: none;
+    width: 20px;
+    height: 20px;
+}
+
+.rodape .rede-instagram {
+    stroke: #e1306c;
+}
+
+.rodape .rede-preenchida {
+    fill: currentColor;
+    stroke: none;
+}
+
+.rodape-copy {
+    padding-top: 16px;
+    text-align: center;
+    font-size: 11px;
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 1100px) {
+    .rodape-colunas {
+        padding-left: 28px;
+        padding-right: 28px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .rodape-colunas {
+        grid-template-columns: 1fr;
+    }
+}

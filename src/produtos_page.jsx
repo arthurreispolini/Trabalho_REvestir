@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "./header";
+import Footer from "./footer";
 import Cardproduto from "./cardproduto";
 import "./produto_page.css";
 import destaque1 from "./assets/destaques/destaque1.jpg";
@@ -295,6 +296,8 @@ function CardsProdutos() {
         </main>
 
       </main>
+
+      <Footer />
 
     </div>
   );
