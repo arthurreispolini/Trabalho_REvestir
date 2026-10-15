@@ -8,7 +8,7 @@ import { FiSearch } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { useCarrinho } from "./CarrinhoContext";
 import { useFavoritos } from "./FavoritosContext";
-import logo from "./assets/logo_revestir.png";
+import logo from "./assets/logo_revestir_divisor.png";
 
 
 function Header() {
@@ -27,8 +27,7 @@ function alternarPesquisa() {
     <div className="header">
       <div className="titlediv">
       <Link to="/" className="logo-link">
-        <img src={logo} alt="Logo REvestir" className="logo-header" />
-        <h1 className="title">REvestir</h1>
+        <img src={logo} alt="REvestir" className="logo-header" />
       </Link>
      <div className={`pesquisa ${input ? "aberta" : ""}`}>
   <FiSearch

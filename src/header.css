@@ -7,8 +7,6 @@
     height: 5rem;
     background-color: #000;
     position: relative;
-    position: fixed;
-    z-index: 90;
 }
  .titlediv{
     display: flex;
@@ -123,7 +121,7 @@
     margin-left: 2rem;
 }
 .logo-header{
-    height: 3.4rem;
+    height: clamp(2.4rem, 3.4vw, 3.4rem);
     width: auto;
     display: block;
 }
